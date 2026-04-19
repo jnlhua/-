@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>个人简介</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Outfit:wght@300;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">个人简介</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#works">作品</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow">你好，我是</p>
+        <h1 id="hero-title" class="hero-title">在这里写上你的名字</h1>
+        <p class="hero-lead">
+          用一两句话介绍自己：正在做的事、擅长领域或当前阶段的目标。访客第一眼就能读懂你是谁。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works">查看作品</a>
+          <a class="btn btn-ghost" href="#contact">联系我</a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="img/根据图创作女子画像.png" alt="根据参考图创作的女子画像" width="640" height="800" loading="eager" />
+      </figure>
+    </section>
+
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="section-inner">
+        <h2 id="about-title" class="section-title">关于我</h2>
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="img/a3a9dcba1ce9d9157de4500b20798c9a.png" alt="个人照片" width="400" height="400" loading="lazy" />
+          </div>
+          <div class="about-copy">
+            <p>
+              在这里写一段更完整的自我介绍：教育或工作背景、兴趣、价值观，以及你希望别人如何记住你。可以分两三段，读起来轻松自然即可。
+            </p>
+            <p>
+              若你有特定技能栈、工具或创作媒介，也可以列在下方，方便合作方快速判断契合度。
+            </p>
+            <ul class="tag-list" aria-label="技能与标签">
+              <li>技能一</li>
+              <li>技能二</li>
+              <li>技能三</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section works" aria-labelledby="works-title">
+      <div class="section-inner">
+        <h2 id="works-title" class="section-title">作品</h2>
+        <p class="section-intro">挑选代表作简单说明创作背景或使用的技术 / 媒介。</p>
+        <div class="works-grid">
+          <article class="work-card">
+            <a class="work-link" href="img/作品.png" target="_blank" rel="noopener noreferrer">
+              <img src="img/作品.png" alt="作品一" width="800" height="600" loading="lazy" />
+            </a>
+            <div class="work-body">
+              <h3>作品一</h3>
+              <p>简述这件作品的主题、过程或亮点。</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <a class="work-link" href="img/作品2.png" target="_blank" rel="noopener noreferrer">
+              <img src="img/作品2.png" alt="作品二" width="800" height="600" loading="lazy" />
+            </a>
+            <div class="work-body">
+              <h3>作品二</h3>
+              <p>另一件作品的说明，可写与第一件不同的侧重点。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="section-inner contact-inner">
+        <h2 id="contact-title" class="section-title">联系</h2>
+        <p>欢迎通过邮件或社交平台与我交流。（将下方链接替换为你的真实联系方式）</p>
+        <ul class="contact-links">
+          <li><a href="mailto:you@example.com">you@example.com</a></li>
+          <li><a href="#" rel="noopener noreferrer">GitHub / 小红书 / 其他</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 你的名字 · 个人网站</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
